@@ -1,0 +1,130 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cup{
+    width: 300px;
+    height: 370px;
+    background-color: white;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    position: relative;
+}
+.top{
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    /* background-color: aqua; */
+    top: -40px;
+    left:0;
+    background:linear-gradient(to right,#f9f9f9,#d9d9d9);
+    border-radius: 50%;
+}
+.circle{
+    position: absolute;
+    width: calc(100% - 20px);
+    height:50px;
+    top: 20px;
+    left: 10px;
+    background:linear-gradient(to right,#ebeaea,#cdcdcd);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.tea{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0%;
+    left: 0;
+    background-color: #c48c5aeb;
+    border-radius: 50%;
+}
+.handle{
+    width:200px;
+    height: 180px;
+    border: 25px solid rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-radius: 50%;
+    top:10%;
+    position: absolute;
+    right: -50%;
+}
+.plate{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    background:linear-gradient(to right,#f9f9f9,#e7e7e7);
+    transform: translateY(65%);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+.plate::before{
+    position: absolute;
+    content: " ";
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    top: 10px;
+    background:linear-gradient(to right,#ededed,#e7e6e6);
+    border-radius: 50%;
+}
+.plate::after{
+    position: absolute;
+    content: " ";
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    top: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 25%,transparent,transparent);
+    border-radius: 50%;
+}
+.vapour{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+.vapour span{
+    position: relative;
+    bottom: 50px;
+    min-width: 8px;
+    display: block;
+    height: 120px;
+    margin: 0 2px 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: animateVapour 5s linear infinite;
+    filter: blur(8px);
+    animation-delay:calc(var(--i) * -0.5s) ;
+}
+
+@keyframes animateVapour {
+    0%{
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-150px) scaleX(5);
+    }
+    95%{
+       opacity: 0;
+    }
+    100%{
+        transform: translateY(-300px) scaleX(10);
+    }
+    
+}
