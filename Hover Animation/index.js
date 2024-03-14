@@ -1,0 +1,53 @@
+const target = document.getElementsByClassName("hold-icons")[0];
+for(let i = 0 ;i < 30; i++){
+    target.innerHTML += `
+    <div>
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-file"></i>
+    <i class="fa-solid fa-car"></i>
+    <i class="fa-solid fa-droplet"></i>
+    <i class="fa-solid fa-truck"></i>
+    <i class="fa-solid fa-wifi"></i>
+    <i class="fa-solid fa-person"></i>
+    <i class="fa-solid fa-person-dress"></i>
+    <i class="fa-solid fa-snowflake"></i>
+    <i class="fa-solid fa-shop"></i>
+    <i class="fa-solid fa-landmark"></i>
+    <i class="fa-solid fa-shirt"></i>
+    <i class="fa-solid fa-anchor"></i>
+    <i class="fa-solid fa-stethoscope"></i>
+    <i class="fa-solid fa-truck-front"></i>
+    <i class="fa-solid fa-mountain-sun"></i>
+    <i class="fa-solid fa-building"></i>
+    <i class="fa-solid fa-flag"></i>
+    <i class="fa-solid fa-school"></i>
+    <i class="fa-solid fa-laptop"></i>
+    <i class="fa-solid fa-hotel"></i>
+    <i class="fa-solid fa-walkie-talkie"></i>
+    <i class="fa-solid fa-shower"></i>
+    <i class="fa-solid fa-ship"></i>
+    <i class="fa-solid fa-seedling"></i>
+    <i class="fa-solid fa-hammer"></i>
+    <i class="fa-solid fa-file-pdf"></i>
+    <i class="fa-solid fa-hospital"></i>
+    <i class="fa-solid fa-virus"></i>
+    <i class="fa-solid fa-radio"></i>
+    <i class="fa-solid fa-plug"></i>
+    <i class="fa-solid fa-plug"></i>
+    <i class="fa-solid fa-church"></i>
+    <i class="fa-solid fa-snowflake"></i>
+    <i class="fa-solid fa-shop"></i>
+    <i class="fa-solid fa-landmark"></i>
+    <i class="fa-solid fa-shirt"></i>
+    <i class="fa-solid fa-anchor"></i>
+    <i class="fa-solid fa-stethoscope"></i>
+    <i class="fa-solid fa-truck-front"></i>
+    <i class="fa-solid fa-mountain-sun"></i>
+    <i class="fa-solid fa-building"></i>
+    <i class="fa-solid fa-flag"></i>
+    <i class="fa-solid fa-school"></i>
+    <i class="fa-solid fa-laptop"></i>
+    <i class="fa-solid fa-hotel"></i>
+   </div>
+    `
+}
